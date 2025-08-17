@@ -1,0 +1,79 @@
+body{
+    background-color: aliceblue;
+    
+    
+}
+.button1{
+    
+    border-style: double;
+    border-radius: 50%;
+    
+}
+
+.dropdown{
+    display:contents;
+}
+
+.dropdown:hover .button1{
+    display: inline;
+    background-color: red;
+}
+
+.dropdown .nav_bar{
+    padding: 8px;
+    text-align: center;
+    word-spacing: 10px;
+    background-color:rgb(233, 238, 238); 
+    display: none;
+    
+}
+
+
+
+.dropdown:hover .nav_bar{
+    display: block;
+}
+
+.introduction{
+   
+    text-align: center;
+    padding: 40px;
+}
+.button2{
+    background-color: red;
+    border-style: hidden;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.reasons{
+    font-size:medium ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.r1{
+    padding: 10px;
+    border-radius: 8px;
+    background-color:rgb(233, 238, 238);
+
+}
+
+.r2{
+    padding: 10px;
+    border-radius: 10px;
+     background-color:rgb(233, 238, 238);
+
+}
+.r3{
+    padding: 10px;
+    border-radius: 10px;
+     background-color:rgb(233, 238, 238);
+
+}
+
+.footer{
+    
+    text-align: center;
+    background-color:rgb(233, 238, 238);
+    padding:10px;
+    
+}
