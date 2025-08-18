@@ -1,79 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open Sans',sans-serif;
+
+}
+
+
+
 body{
-    background-color: aliceblue;
     
-    
+    background-image: url(https://images.unsplash.com/photo-1628841220750-52e52714bb11?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzU1fHx0ZWNobm9sb2d5fGVufDB8fDB8fHww);
+     
+
+    /* background-image: url(https://images.unsplash.com/photo-1667366799331-3a2b515c6c4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRhcmslMjB0ZWNoJTIwY29kaW5nJTIwbGFwdG9wJTIwYmxhY2slMjBwZXJzb24lMjByZWQlMjBjb2xvcmluZ3xlbnwwfHwwfHx8MA%3D%3D); */
+
+    background-position: center;
+    background-size:cover;
 }
-.button1{
+
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
     
-    border-style: double;
-    border-radius: 50%;
+    height: 60px;
+    max-width:  100%;
+    margin: 0 auto;
+    height: 100px;
+    border-bottom: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+} 
+
+.navbar .logo{
+    color: white;
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+
+.navbar .links{ 
+    display: flex; 
+    gap: 2rem;
+    list-style-type:none;
     
 }
 
-.dropdown{
-    display:contents;
-}
-
-.dropdown:hover .button1{
-    display: inline;
-    background-color: red;
-}
-
-.dropdown .nav_bar{
-    padding: 8px;
-    text-align: center;
-    word-spacing: 10px;
-    background-color:rgb(233, 238, 238); 
+.navbar .toggle_btn{
+    color: white;
     display: none;
+}
+
+.navbar .links a{
+    color: white;
+    text-decoration: none;
+    
+
+}
+
+.navbar .links a:hover{
+    color: green;
+}
+
+.dropdown_menu{
+    display: none;
+     position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    background-color: rgb(255,255 ,255,0.1);
+     border-radius: 10px;
+     backdrop-filter: blur(15px);
+     width: 300px;
+     overflow: hidden; 
+}
+
+ .dropdown_menu.open{
+ height: 240px;
+ }
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    list-style-type:none;
+
+   
+}
+
+.dropdown_menu li a{
+      text-decoration:none;
+
+}
+
+@media(max-width:992px) {
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
     
 }
 
 
-
-.dropdown:hover .nav_bar{
-    display: block;
-}
-
-.introduction{
-   
+/* Main page */
+.intro{
+    color:white;
+    font-size: 2rem;
+    display: flex;
+    height: calc(100vh );
     text-align: center;
-    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    
 }
-.button2{
+.intro .GetInTouch{
     background-color: red;
     border-style: hidden;
-    border-radius: 8px;
-    padding: 5px;
-}
-
-.reasons{
-    font-size:medium ;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.r1{
-    padding: 10px;
-    border-radius: 8px;
-    background-color:rgb(233, 238, 238);
-
-}
-
-.r2{
-    padding: 10px;
+    width: 100px;
+    padding: .3rem;
     border-radius: 10px;
-     background-color:rgb(233, 238, 238);
 
-}
-.r3{
-    padding: 10px;
-    border-radius: 10px;
-     background-color:rgb(233, 238, 238);
 
 }
 
-.footer{
-    
-    text-align: center;
-    background-color:rgb(233, 238, 238);
-    padding:10px;
-    
+footer{
+    border-top: 1px solid red;
+    display: flex;
+    width: 100%;
+    height:60px;
+    justify-content: center;
+    color: white;  
+    align-items: center;
 }
+
+
+
+
+
+
+/* styling for the contacts page */
